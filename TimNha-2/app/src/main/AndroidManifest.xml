@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sony.timnha">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_nhatro"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dangky"
+            android:label="@string/title_activity_dangky"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DangKyNhaTro"
+            android:label="@string/title_activity_dang_ky_nha_tro"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ThongTinUser"
+            android:label="@string/title_activity_thong_tin_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".XemDiaChiMap"
+            android:label="@string/title_activity_xem_dia_chi_map"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCQ_qS8yCKeXSunbUbLMv8WT1fIt1coClw" />
+
+        <activity
+            android:name=".thongtinnhatro"
+            android:label="@string/title_activity_thongtinnhatro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".thong_tin_nha_tro_user"
+            android:label="@string/title_activity_thong_tin_nha_tro_user"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

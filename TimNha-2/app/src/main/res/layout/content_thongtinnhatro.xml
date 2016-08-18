@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sony.timnha.thongtinnhatro"
+    tools:showIn="@layout/activity_thongtinnhatro">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_height="400dp"
+        android:layout_width="fill_parent"
+        android:paddingBottom="30dp">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Địa Chỉ "
+            android:textStyle="bold"
+            android:textSize="@dimen/textSizeT"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:textSize="@dimen/textSizeT"
+            android:id="@+id/TTNTDiaChi" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Giá"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSizeT"
+            android:id="@+id/textView16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:textStyle="italic"
+            android:textColor="#FF2A23"
+            android:textSize="@dimen/textSizeT"
+            android:id="@+id/TTNTGIA" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mô Tả "
+        android:textStyle="bold"
+        android:textSize="@dimen/textSizeT"
+        android:id="@+id/textView17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:maxLines="6"
+        android:singleLine="false"
+        android:id="@+id/TTNTMota" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem Địa Chỉ Bằng Google Map"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/textSize"
+        android:background="@color/colorPrimary"
+        android:id="@+id/TTNTButtonXemDiaChi" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:gravity="bottom">
+
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="Gọi"
+                android:textSize="@dimen/textSize"
+
+                android:textColor="#FFFFFF"
+                android:id="@+id/TTNTGoi"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize"
+                android:layout_marginLeft="2dp"
+                android:text="Sms"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorPrimary"
+                android:id="@+id/TTNTSms" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

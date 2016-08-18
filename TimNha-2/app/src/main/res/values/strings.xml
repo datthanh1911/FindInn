@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TimNha</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_dangky">Dangky</string>
+    <string name="title_activity_dang_ky_nha_tro">DangKyNhaTro</string>
+    <string name="title_activity_thong_tin_user">ThongTinUser</string>
+    <string name="titleLogin">Login</string>
+    <string name="title_activity_xem_dia_chi_map">XemDiaChiMap</string>
+    <string name="title_activity_thongtinnhatro">thongtinnhatro</string>
+    <string name="title_activity_thong_tin_nha_tro_user">thong_tin_nha_tro_user</string>
+</resources>
